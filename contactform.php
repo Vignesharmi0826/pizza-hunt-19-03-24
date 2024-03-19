@@ -6,10 +6,11 @@ if (isset($_POST['submit'])) {
 	$mailFrom = $_POST['email'];
 	$message = $_POST['message'];
 	
-	$mailto = "lvicky7720@gmail.com";
+	$mailto = "lvicky8520@gmail.com";
 	$headers = "From: ".$mailFrom;
 	$txt = "You have recieved an e-mail from ".$name.".\n\n".$message;
 	
 	mail($mailto, $subject, $txt, $headers);
-	header("Location: https://www.lvicky.org/contact.html/?mailsend");
+	header("Location: file:///C:/xampp/htdocs/all%20boos/contact.html/?mailsend");
  }
+ ?>
